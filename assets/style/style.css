@@ -30,8 +30,8 @@
 }
 
 .skill-lists ul{
-    display: grid;
-    grid-template-columns: auto auto;
+    
+    
 }
 
 .skill-lists li{
