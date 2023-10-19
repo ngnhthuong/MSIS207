@@ -19,10 +19,6 @@ body {
     font-weight: bold;
 }
 
-.title hr{
-    color:beige;
-}
-
 .main-title {
     padding: 1rem;
 }
@@ -39,15 +35,9 @@ main {
     padding: 10px;
 }
 
-.chevron-right {
-    width: 1rem;
-    height: 0.7rem;
-    stroke: red;
-}
-
 .notification-mail {
     display: inline-block;
-    padding: 0.3rem 0;
+    margin: 5px 0;
 }
 
 .notification-mail p {
@@ -55,33 +45,17 @@ main {
     position: relative;
 }
 
-.icon {
-    display: inline-block;
-}
-
 .notification__title {
     left: 10px;
     color: #08c;
     display: inline-block;
     text-decoration: none;
-    max-width: 894px;
+    width: fit-content;
 }
 
 .notification__title::after{
     content: " - 27/03/2020 - 10:50";
     color: black;
-}
-
-.space {
-    display: inline-block;
-}
-
-.notification__time{
-    display: inline-block;
-}
-
-.notification__day{
-    display: inline-block;
 }
 
 .links{
@@ -96,3 +70,16 @@ main {
     content: " »";
 }
 
+.notification ul li{
+    background: url(../images/list-style.png) no-repeat 0 4px;
+    padding-left: 12px;
+    list-style: none;
+}
+
+.marker{
+    display: inline-block;
+}
+
+.li{
+    text-align: -webkit-match-parent;
+}
