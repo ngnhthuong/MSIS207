@@ -42,6 +42,10 @@ main {
     overflow-y: hidden;
 }
 
+.side__click {
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     .side-bar {
         display: none;
@@ -148,6 +152,7 @@ input:focus {
 }
 
 .content__infor{
+    margin: 0.5rem 0 1rem 0;
     display: flex;
     max-width: 250px;
 }

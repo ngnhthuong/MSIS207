@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+body {
+    background-color: #fff;
+}
+
+#menu {
+    position: sticky;
+    top: 0;
+    background-color: #009dcb;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: 999;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+#menu ul li a {
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cedee3;
+    padding: 15px 10px;
+    transition: color 0.5s;
+}
+
+#menu ul li a:hover {
+    color: #fff;
+}
+
+.col-md-12 {
+    position: relative;
+    min-height: 1px;
+    margin-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img#logo {
+    width: 15%;
+    height: auto;
+}
+
+
+#navbar {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    width: 60%;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#navbar ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+#navbar ul li a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px auto;
+    transition: color 0.5s;
+}
+
+#navbar ul li a:hover {
+    color: #ff6800;
+}
+
+
+#subscribe-button {
+    border-radius: 5px;
+    border: 1px solid #cedee3;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    float: right;
+    margin: 10px 0px;
+    transition: color 0.5s;
+}
+
+span:hover {
+    background-color: #009dcb;
+}
+
+
+body-uni {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4rem;
+}
+
+.title {
+    padding: 0 10px;
+    color: #0056e0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-title {
+    padding: 1rem;
+}
+
+main {
+    width: 60rem;
+    height: 25rem;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.notification {
+    padding: 10px;
+}
+
+.notification-mail {
+    display: inline-block;
+    margin: 3px 0;
+}
+
+.notification-mail p {
+    padding: 0 0.2rem;
+    position: relative;
+}
+
+.notification__title {
+    left: 10px;
+    color: #08c;
+    display: inline-block;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.notification__title::after {
+    content: " - 27/03/2020 - 10:50";
+    color: black;
+}
+
+.links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.links::after {
+    content: " »";
+}
+
+.notification ul li {
+    background: url(../images/list-style.png) no-repeat 0 4px;
+    padding-left: 12px;
+    list-style: none;
+}
+
+.marker {
+    display: inline-block;
+}
+
+.li {
+    text-align: -webkit-match-parent;
+}
