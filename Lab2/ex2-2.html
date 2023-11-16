@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+</head>
+
+<body>
+    <div id="formArea"></div>
+</body>
+<script>
+    function createForm() {
+        const form = document.createElement("form");
+        form.id = "formCheck"
+        const labelChild = document.createElement("label");
+        labelChild.textContent = "Name";
+        labelChild.id = "name";
+        // input name
+        const inputName = document.createElement("input");
+        inputName.type = "text";
+        inputName.id = "Name";
+        // submit
+        const submit = document.createElement("input");
+        submit.type = "submit";
+        submit.value = "submit";
+        submit.id = "submit";
+        // append
+        labelChild.appendChild(inputName);
+        form.appendChild(labelChild);
+        form.appendChild(submit);
+        document.getElementById("formArea").appendChild(form);
+    }
+    createForm();
+    const submitID = document.getElementById("submit");
+    submitID.addEventListener("click", function () {
+        alert("submit successed!");
+    })
+</script>
+
+</html>

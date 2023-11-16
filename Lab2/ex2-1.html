@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input id="submit"type="submit" value="past" type="submit"> -->
+    <div id="formId"></div>
+</body>
+<script>
+    const form= document.createElement("input");
+    form.value = "past";
+    form.type = "submit";
+    form.id = "submit";
+    const formArea = document.getElementById('formId');
+    formArea.appendChild(form);
+    const submit = document.getElementById("submit");
+    submit.addEventListener('click', function(){
+        submit.value == "past" ? submit.value = "future" : submit.value = "past"
+    })    
+</script>
+</html>

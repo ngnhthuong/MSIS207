@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTPCookie</title>
+</head>
+<body>
+    
+</body>
+<script>
+function parseCookie(cookieString) {
+    var cookiesArray = cookieString.split('; ');
+    var cookiesObject = {};
+    for (var i = 0; i < cookiesArray.length; i++) {
+        var cookieParts = cookiesArray[i].split('=');
+        var cookieValue = decodeURIComponent(cookieParts[1] || '');
+        cookiesObject[cookieParts[0]] = cookieValue;
+    }
+
+    return cookiesObject;
+}
+var cookieHeader = "name=John%20Doe; age=25; city=New%20York";
+var parsedCookies = parseCookie(cookieHeader);
+console.log(parsedCookies);
+
+</script>
+</html>

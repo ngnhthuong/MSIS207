@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator Form</title>
+</head>
+
+<body>
+
+    <div id="form-container"></div>
+
+    <script>
+        function createAgeCalculatorForm() {
+            var form = document.createElement("form");
+            form.id = "ageCalculatorForm";
+            var birthdateLabel = document.createElement("label");
+            birthdateLabel.textContent = "Enter Birthdate:";
+            var birthdateInput = document.createElement("input");
+            birthdateInput.type = "date";
+            birthdateInput.name = "birthdate";
+            birthdateLabel.appendChild(birthdateInput);
+            var calculateButton = document.createElement("button");
+            calculateButton.textContent = "Calculate Age";
+            calculateButton.type = "button"; // Use "button" type to prevent form submission
+            var resultParagraph = document.createElement("p");
+            resultParagraph.id = "result";
+            calculateButton.addEventListener("click", function () {
+                var birthdate = new Date(birthdateInput.value);
+                var currentDate = new Date();
+                var age = currentDate.getFullYear() - birthdate.getFullYear();
+                resultParagraph.textContent = "Age: " + age + " years";
+            });
+            form.appendChild(birthdateLabel);
+            form.appendChild(document.createElement("br")); // Add a line break
+            form.appendChild(calculateButton);
+            form.appendChild(document.createElement("br")); // Add a line break
+            form.appendChild(resultParagraph);
+            document.getElementById("form-container").appendChild(form);
+        }
+        createAgeCalculatorForm();
+    </script>
+
+</body>
+
+</html>
