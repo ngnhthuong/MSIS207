@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height:1.4rem;
+}
+
+.title {
+    padding: 0 10px;
+    color: #0056e0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-title {
+    padding: 1rem;
+}
+
+main {
+    width: 60rem;
+    height: 25rem;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.notification {
+    padding: 10px;
+}
+
+.notification-mail {
+    display: inline-block;
+    margin: 3px 0;
+}
+
+.notification-mail p {
+    padding: 0 0.2rem;
+    position: relative;
+}
+
+.notification__title {
+    left: 10px;
+    color: #08c;
+    display: inline-block;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.notification__title::after{
+    content: " - 27/03/2020 - 10:50";
+    color: black;
+}
+
+.links{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.links::after{
+    content: " »";
+}
+
+.notification ul li{
+    background: url(../images/list-style.png) no-repeat 0 4px;
+    padding-left: 12px;
+    list-style: none;
+}
+
+.marker{
+    display: inline-block;
+}
+
+.li{
+    text-align: -webkit-match-parent;
+}

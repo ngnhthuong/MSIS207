@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+body ul {
+    list-style: none;
+    display: inline-block;
+}
+
+body ul li {
+    background-color: #dfe1e7;
+    margin-right: 10px;
+    height: 150px;
+    width: 100px;
+    font-size: 40px;
+    padding: 10px;
+    border-left: 10px dotted #d1cadb;
+    display: inline-block;
+}
+
+body ul li:hover {
+    background-color: rgb(246, 246, 122);
+}
+
+body ul li:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
